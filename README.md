@@ -1,7 +1,7 @@
 # Camera
 Run [demo](https://54.90.130.57/#/)  
 ## About this project
-* Camera App that allows you to upload images taken from the browser onto an AWS cloud server. 
+* Camera App that allows you to upload images taken from the browser onto an AWS cloud server using Javascript and Html.
 * There are 3 main pages: login, camera, and gallery.
 * Users must make an account in order to login to this app and upload their snapshots.
 * Users will be stored in a listOfUsers table in a MySql camera database.

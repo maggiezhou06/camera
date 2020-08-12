@@ -44,6 +44,10 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 #### Create pem file from certificate
 openssl x509 -in private.crt -out private.pem -outform PEM
 
+### Connect to servers
+* ssh -i "aws-keypair.pem" ubuntu@54.175.248.168
+* ssh -i "aws-keypair.pem" ubuntu@54.90.130.57
+
 ### MySql setup
 CREATE TABLE `listOfUsers` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,

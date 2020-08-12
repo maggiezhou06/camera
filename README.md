@@ -1,4 +1,5 @@
 # Camera
+## Run [demo](https://54.90.130.57/#/)  
 ## About this project
 * Camera App that allows you to upload images onto an AWS cloud server. 
 * There are 3 main pages: login, camera, and gallery.
@@ -10,8 +11,6 @@
 * To maintain security and privacy, the ubuntu webpack server cannot directly access content from the second ubuntu server. In order get this data and reach the other server, a proxy is used as a gateway.
 * A JSON web token is assigned to the user after login. The user cannot upload any images to the server if the token is not verified first.
 * A short lived string token attached to the end of the img.src call that must be authenticated in the second ubuntu server in order to gain access to images in the gallery. This ensures that image files cannot be reached directly through the server’s url, even if the user happens to know exact file directories. 
-
-## Run [demo](https://54.90.130.57/#/)  
 
 ## Architecture
 ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)

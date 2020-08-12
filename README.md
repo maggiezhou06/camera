@@ -1,11 +1,10 @@
-# Mobile Camera
+# Camera
 Run [demo](https://54.90.130.57/#/)  
 
 ## Architecture
 ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)
 
 ## Project setup
-
 
 ### Generate SSL Certificate Webpack
 #### Generate private key

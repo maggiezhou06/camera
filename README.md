@@ -1,5 +1,4 @@
-# Camera
-Run [demo](https://54.90.130.57/#/)  
+# Camera Project for AT&T
 ## About this project
 * Camera App that allows you to upload images taken from the browser onto an AWS cloud server using Javascript and Html.
 * There are 3 main pages: login, camera, and gallery.
@@ -23,6 +22,10 @@ Image path:
 
 ## Project setup
 
+### Set up two ubuntu servers from AWS
+* webpack
+* node js and mysql
+
 ### Generate SSL Certificate Webpack
 #### Generate private key
 openssl genrsa -out private.key 4096
@@ -43,10 +46,6 @@ openssl x509 -req \
 sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain private.crt
 #### Create pem file from certificate
 openssl x509 -in private.crt -out private.pem -outform PEM
-
-### Connect to servers
-* ssh -i "aws-keypair.pem" ubuntu@54.175.248.168
-* ssh -i "aws-keypair.pem" ubuntu@54.90.130.57
 
 ### MySql setup
 CREATE TABLE `listOfUsers` (

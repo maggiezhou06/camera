@@ -14,8 +14,10 @@ Run [demo](https://54.90.130.57/#/)
 
 ## Architecture
 Main components:  
+  
 ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)  
 Image path:  
+  
 ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/image_path.png)
 
 

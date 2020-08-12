@@ -32,8 +32,6 @@ export default {
   },
   data() {
     return {
-      cloudnameState: null,
-      presetState: null,
       clearsettings: "false",
       expire: 3600000,
       authenticated: false, 

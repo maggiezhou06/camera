@@ -5,6 +5,7 @@ At&t basic intern project
 * There are 3 main pages: login, camera, and gallery.
 * Users must make an account in order to login to this app and upload their snapshots.
 * Users will be stored in a listOfUsers table in a MySql camera database.
+* Camera is built using WebRTC.
 * The gallery page displays all of the images under the user's account. Here the user can select images to be deleted.
 * The snapshots taken with this camera will be used to collect data for AI facial recognition training.
 ## Security
@@ -25,7 +26,9 @@ Image path:
 
 ### Set up two ubuntu servers from AWS
 * webpack
+  * replace (input_public/private_ip_of_your_ubuntu_webpack_server_here) throughout code with your own AWS information
 * node js and mysql
+  * replace (input_public_ip_of_your_ubuntu_server2_here) throughout code with your own AWS information
 
 ### Generate SSL Certificate Webpack
 #### Generate private key
@@ -60,6 +63,7 @@ CREATE TABLE `listOfUsers` (
   UNIQUE KEY `Username` (`Username`),
   UNIQUE KEY `Email` (`Email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
 
 ### Installations
 ```

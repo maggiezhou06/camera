@@ -1,5 +1,5 @@
 # Camera
-## Run [demo](https://54.90.130.57/#/)  
+Run [demo](https://54.90.130.57/#/)  
 ## About this project
 * Camera App that allows you to upload images onto an AWS cloud server. 
 * There are 3 main pages: login, camera, and gallery.

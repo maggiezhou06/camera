@@ -14,6 +14,8 @@ Run [demo](https://54.90.130.57/#/)
 
 ## Architecture
 ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)
+![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/image_path.png)
+
 
 ## Project setup
 

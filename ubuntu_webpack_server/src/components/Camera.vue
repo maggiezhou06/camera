@@ -75,7 +75,7 @@ export default {
   },
   created: function () {
       this.Username = this.$route.params.Username;
-      axios.post('https://54.90.130.57/api/getFirstName', {
+      axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/getFirstName', {
           Username: this.Username
       })
       .then((response) => {
@@ -85,7 +85,7 @@ export default {
       }, (error) => {
       });
 
-      axios.post('https://54.90.130.57/api/getLastName', {
+      axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/getLastName', {
           Username: this.Username
       })
       .then((response) => {
@@ -136,7 +136,7 @@ export default {
             "Access-Control-Allow-Origin": "*"
         }
       };
-      axios.post('https://54.90.130.57/api/uploadImages', formData, axiosConfig)
+      axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/uploadImages', formData, axiosConfig)
       .then((response) => {
           console.log(response.data);
       }, (error) => {

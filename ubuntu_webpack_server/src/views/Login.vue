@@ -134,7 +134,7 @@ export default {
     methods: {
         login() {
               if(this.input.username != "" && this.input.password != "") {
-                axios.post('https://54.90.130.57/api/findUser', {
+                axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/findUser', {
                     Username: this.input.username,
                     Password: this.input.password
                 })
@@ -219,7 +219,7 @@ export default {
             if (!this.checkFormValidity()) {
                 return;
             } else {
-                axios.post('https://54.90.130.57/api/addAccount', {
+                axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/addAccount', {
                         First_Name: this.firstName,
                         Last_Name: this.lastName,
                         Username: this.username,

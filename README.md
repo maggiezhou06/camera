@@ -1,4 +1,5 @@
-# Camera Project for AT&T
+# Camera Project
+At&t basic intern project
 ## About this project
 * Camera App that allows you to upload images taken from the browser onto an AWS cloud server using Javascript and Html.
 * There are 3 main pages: login, camera, and gallery.

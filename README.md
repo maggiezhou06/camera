@@ -13,8 +13,8 @@ Run [demo](https://54.90.130.57/#/)
 * A short lived string token attached to the end of the img.src call that must be authenticated in the second ubuntu server in order to gain access to images in the gallery. This ensures that image files cannot be reached directly through the server’s url, even if the user happens to know exact file directories. 
 
 ## Architecture
-* ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)
-* ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/image_path.png)
+![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)  
+![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/image_path.png)
 
 
 ## Project setup

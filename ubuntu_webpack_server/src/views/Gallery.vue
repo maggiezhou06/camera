@@ -43,7 +43,7 @@ export default {
             }
           }
       }
-      axios.post('https://54.90.130.57/api/deleteFiles', {
+      axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/deleteFiles', {
           Username: this.currUsername, 
           filesForDeletion: myFilesForDeletion
       })
@@ -70,7 +70,7 @@ export default {
       var data = {
         Username: this.currUsername
       };
-      axios.post('https://54.90.130.57/api/getFiles', data, axiosConfig)
+      axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/getFiles', data, axiosConfig)
       .then((response) => {
           for (var i = 0; i < response.data.myFiles.length; i++) {
             console.log(JSON.stringify(response.data.myFiles[i]));
@@ -95,7 +95,7 @@ export default {
 
               var img = document.createElement("IMG");
               console.log("add tempToken: " + this.tempToken);
-              var urlBefore = "https://54.90.130.57/uploads" + response.data.myFiles[i] + "?token=" + this.tempToken + "&count=" + (i+1) + "&total=" + this.numOfFiles;
+              var urlBefore = "https://input_public_ip_of_your_ubuntu_webpack_server_here/uploads" + response.data.myFiles[i] + "?token=" + this.tempToken + "&count=" + (i+1) + "&total=" + this.numOfFiles;
               var url = new URL(urlBefore);
               console.log(url);
               img.src =  url;
@@ -113,7 +113,7 @@ export default {
   mounted() {
     const axios = require('axios');
     this.currUsername = localStorage.getItem('Username');
-    axios.post('https://54.90.130.57/api/getNonce', {
+    axios.post('https://input_public_ip_of_your_ubuntu_webpack_server_here/api/getNonce', {
       Username: this.currUsername
     })
     .then((response) => {

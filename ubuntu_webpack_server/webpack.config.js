@@ -17,11 +17,11 @@ module.exports = {
     cert: fs.readFileSync('private.crt'), 
     ca: fs.readFileSync('private.pem'),
     compress: true,
-    host: "172.30.0.234",
+    host: "input_private_ip_of_your_ubuntu_webpack_server_here",
     port: 443,
     proxy: {
         '/uploads': {
-            target: 'https://54.175.248.168:443', 
+            target: 'https://input_public_ip_of_your_ubuntu_server2_here:443', 
             changeOrigin: true, 
             secure: false, 
             pathRewrite: {
@@ -29,7 +29,7 @@ module.exports = {
             }
         },
         '/api': {
-            target: 'https://54.175.248.168:443',
+            target: 'https://input_public_ip_of_your_ubuntu_server2_here:443',
             changeOrigin: true, 
             secure: false
         }

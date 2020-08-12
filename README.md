@@ -1,14 +1,18 @@
 # Camera
-## About
+## About this project
 * Camera App that allows you to save pictures onto an AWS cloud server. 
 * There are 3 main pages: login, camera, and gallery.
 * Users must make an account in order to login to this app and upload their snapshots.
 * Users will be stored in a listOfUsers table in a MySql camera database.
 * The gallery page displays all of the images under the user's account. Here the user can select images to be deleted.
 * The snapshots taken with this camera will be used to collect data for AI facial recognition training.
+## Security
+* To maintain security and privacy, the ubuntu webpack server cannot directly access content from the second ubuntu server. In order get this data and reach the other server, a proxy is used as a gateway.
+* A JSON web token is assigned to the user after login. The user cannot upload any images to the server if the token is not verified first.
+* A short lived string token attached to the end of the img.src call that must be authenticated in the second ubuntu server in order to gain access to images in the gallery. This ensures that image files cannot be reached directly through the server’s url, even if the user happens to know exact file directories. 
 
 
-Run [demo](https://54.90.130.57/#/)  
+## Run [demo](https://54.90.130.57/#/)  
 
 ## Architecture
 ![Diagram](https://github.com/maggiezhou06/camera/blob/master/ubuntu_webpack_server/architecture.png)

@@ -1,4 +1,13 @@
 # Camera
+## About
+* Camera App that allows you to save pictures onto an AWS cloud server. 
+* There are 3 main pages: login, camera, and gallery.
+* Users must make an account in order to login to this app and upload their snapshots.
+* Users will be stored in a listOfUsers table in a MySql camera database.
+* The gallery page displays all of the images under the user's account. Here the user can select images to be deleted.
+* The snapshots taken with this camera will be used to collect data for AI facial recognition training.
+
+
 Run [demo](https://54.90.130.57/#/)  
 
 ## Architecture

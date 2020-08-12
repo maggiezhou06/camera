@@ -1,7 +1,7 @@
 # Camera
 Run [demo](https://54.90.130.57/#/)  
 ## About this project
-* Camera App that allows you to upload images onto an AWS cloud server. 
+* Camera App that allows you to upload images taken from the browser onto an AWS cloud server. 
 * There are 3 main pages: login, camera, and gallery.
 * Users must make an account in order to login to this app and upload their snapshots.
 * Users will be stored in a listOfUsers table in a MySql camera database.
@@ -37,10 +37,6 @@ openssl x509 -req \
 sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain private.crt
 #### Create pem file from certificate
 openssl x509 -in private.crt -out private.pem -outform PEM
-
-### Connect to servers
-ssh -i "aws-keypair.pem" ubuntu@54.175.248.168
-ssh -i "aws-keypair.pem" ubuntu@54.90.130.57
 
 ### MySql setup
 CREATE TABLE `listOfUsers` (

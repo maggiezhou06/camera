@@ -77,3 +77,5 @@ npm run build
 ```
 npm start
 ```
+### In browser:
+https://input_public_ip_of_your_ubuntu_webpack_server_here

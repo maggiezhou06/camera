@@ -4,7 +4,7 @@ At&t basic intern project
 * Camera App that allows you to upload images taken from the browser onto an AWS cloud server using Javascript and Html.
 * There are 3 main pages: login, camera, and gallery.
 * Users must make an account in order to login to this app and upload their snapshots.
-* Users will be stored in a listOfUsers table in a MySql camera database.
+* Users will be stored in a listOfUsers table in a MySQL camera database.
 * Camera is built using WebRTC.
 * The gallery page displays all of the images under the user's account. Here the user can select images to be deleted.
 * The snapshots taken with this camera will be used to collect data for AI facial recognition training.
@@ -51,7 +51,7 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 #### Create pem file from certificate
 openssl x509 -in private.crt -out private.pem -outform PEM
 
-### MySql setup
+### MySQL setup
 CREATE TABLE `listOfUsers` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `First_Name` varchar(255) NOT NULL,

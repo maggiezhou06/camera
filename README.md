@@ -9,7 +9,7 @@ At&t basic intern project
 * The gallery page displays all of the images under the user's account. Here the user can select images to be deleted.
 * The snapshots taken with this camera will be used to collect data for AI facial recognition training.
 ## Security
-* To maintain security and privacy, the ubuntu webpack server cannot directly access content from the second ubuntu server. In order get this data and reach the other server, a proxy is used as a gateway.
+* To maintain security and privacy, the ubuntu webpack server cannot directly access content from the second ubuntu server. In order to get this data and reach the other server, a proxy is used as a gateway.
 * A JSON web token is assigned to the user after login. The user cannot upload any images to the server if the token is not verified first.
 * A short lived string token attached to the end of the img.src call that must be authenticated in the second ubuntu server in order to gain access to images in the gallery. This ensures that image files cannot be reached directly through the server’s url, even if the user happens to know exact file directories. 
 

@@ -10,7 +10,7 @@ At&t basic intern project
 * The snapshots taken with this camera will be used to collect data for AI facial recognition training.
 
 ## Login Page
-<img width="508" alt="Screen Shot 2020-10-20 at 11 23 55 AM" src="https://user-images.githubusercontent.com/69057964/104542147-f708e780-55f0-11eb-95dd-fe3a193db5af.png">
+<img width="250" alt="Screen Shot 2020-10-20 at 11 23 55 AM" src="https://user-images.githubusercontent.com/69057964/104542147-f708e780-55f0-11eb-95dd-fe3a193db5af.png">
 
 ## Security
 * To maintain security and privacy, the ubuntu webpack server cannot directly access content from the second ubuntu server. In order to get this data and reach the other server, a proxy is used as a gateway.
